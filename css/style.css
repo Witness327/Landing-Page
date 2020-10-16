@@ -41,3 +41,29 @@
 body {
     background-color: black;
 }
+
+@media (min-width: 768px) {
+    .top-nav a {
+        display: inline-block;        
+    }
+
+    .top-nav a.icon {
+        display: none;
+        text-align: right;
+        align-items: center;
+    }
+
+    .top-nav {    
+        overflow: hidden;
+        background-color: whitesmoke;
+        position: center; 
+    }
+
+
+}
+
+@media (min-width: 1024px) {
+    .top-nav #my-links {
+        display: inline-block;      
+    }
+}
