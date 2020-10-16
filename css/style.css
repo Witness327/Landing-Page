@@ -1,0 +1,43 @@
+
+.top-nav {    
+    overflow: hidden;
+    background-color: whitesmoke;
+    position: relative; 
+}
+
+.top-nav #my-links {
+    display: none;
+    
+    
+}
+
+.top-nav a {
+    color: steelblue;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+    
+}
+
+.top-nav a.icon {
+    background: whitesmoke;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.top-nav a:hover {
+    background-color: lightsteelblue;
+    color: white;
+}
+
+.active {
+    background-color: whitesmoke;
+    color: white;
+}
+
+body {
+    background-color: black;
+}
