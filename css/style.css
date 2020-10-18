@@ -3,12 +3,11 @@
     overflow: hidden;
     background-color: whitesmoke;
     position: relative; 
+
 }
 
 .top-nav #my-links {
-    display: none;
-    
-    
+    display: none;   
 }
 
 .top-nav a {
@@ -43,14 +42,21 @@ body {
 }
 
 @media (min-width: 768px) {
+    a.active {
+        display: none;
+    }  
+
     .top-nav a {
         display: inline-block;        
     }
 
+     .top-nav {
+         text-align: center;       
+     }
+
     .top-nav a.icon {
-        display: none;
         text-align: right;
-        align-items: center;
+        align-items: left;
     }
 
     .top-nav {    
@@ -63,7 +69,15 @@ body {
 }
 
 @media (min-width: 1024px) {
+    a.active {
+        display: none;
+    }
     .top-nav #my-links {
         display: inline-block;      
+    }
+
+    .top-nav a.icon {
+        display: none;
+
     }
 }
