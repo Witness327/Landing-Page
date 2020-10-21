@@ -42,53 +42,32 @@ body {
 }
 
 @media (min-width: 768px) {
-    /* 768px */
 
     #my-links {
         display: inline-block !important;
+    }
+
+    .top-nav a {
+        display: inline-block;     
     }
 
     .top-nav a.active {
         display: none;
     }
 
+    .top-nav a.icon {
+        display: none;
+    }
+
     .top-nav {
         text-align: center ;                  
     }
-
-    .top-nav a {
-        display: inline-block;     
-    }
-
-    .top-nav #my-links {
-        display: inline-block;      
-    }
-
-    .top-nav a.icon {
-        display: none;
-    }
-
-
 }
 
-@media (min-width: 1024px) {
-    .top-nav {
-        text-align: center;  
-        visibility: visible;              
-    }
+/* @media (min-width: 1024px) {
 
-    .top-nav a {
-        display: inline-block;     
-    }
+} */
 
-    .top-nav #my-links {
-        display: inline-block;      
-    }
-
-    .top-nav a.icon {
-        display: none;
-    }
-}
 
 
 
