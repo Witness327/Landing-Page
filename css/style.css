@@ -44,12 +44,16 @@ body {
 @media (min-width: 768px) {
     /* 768px */
 
+    #my-links {
+        display: inline-block !important;
+    }
+
     .top-nav a.active {
         display: none;
     }
 
     .top-nav {
-        text-align: center;                
+        text-align: center ;                  
     }
 
     .top-nav a {
@@ -68,18 +72,9 @@ body {
 }
 
 @media (min-width: 1024px) {
-    /* .top-nav a.active {
-        display: none;
-    } */
-
-    /* .sticky {
-        position: fixed;
-        top: 0;
-        width: 100%;
-      } */
-
     .top-nav {
-        text-align: center;                
+        text-align: center;  
+        visibility: visible;              
     }
 
     .top-nav a {
@@ -90,12 +85,15 @@ body {
         display: inline-block;      
     }
 
-    /* .top-nav a.active {
-        position: absolute;
-        
-    } */
-
     .top-nav a.icon {
         display: none;
     }
 }
+
+
+
+
+
+
+
+
