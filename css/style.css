@@ -1,8 +1,14 @@
 
+
+#my-links {
+    text-align: center;
+}
+
 .top-nav {    
     overflow: hidden;
-    background-color: whitesmoke;
-    position: relative; 
+    background-color: white;
+    color: black;
+    position: relative;     
 
 }
 
@@ -11,7 +17,7 @@
 }
 
 .top-nav a {
-    color: steelblue;
+    color: black;
     padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
@@ -20,35 +26,40 @@
 }
 
 .top-nav a.icon {
-    background: whitesmoke;
+    background: white;
     display: block;
     position: absolute;
     right: 0;
     top: 0;
 }
 
-.top-nav a:hover {
+/* .top-nav a:hover {
     background-color: lightsteelblue;
     color: white;
-}
+} */
 
 .active {
-    background-color: whitesmoke;
+    background-color: white;
     color: white;
 }
 
 body {
-    background-color: lightseagreen;
+    background-color: white;
 }
 
 @media (min-width: 768px) {
+
+    #my-links a:hover {
+        border-bottom: 2px solid rgb(12, 179, 12);    
+    }
 
     #my-links {
         display: inline-block !important;
     }
 
     .top-nav a {
-        display: inline-block;     
+        display: inline-block; 
+        margin-bottom: 10px;    
     }
 
     .top-nav a.active {
