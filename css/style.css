@@ -1,32 +1,42 @@
 
+* {
+    box-sizing: border-box;
+  }
 
 #my-links {
-    text-align: center;
+    text-align: center;    
 }
 
 .top-nav {    
     overflow: hidden;
-    background-color: white;
-    color: black;
-    position: relative;     
-
+    color: rgb(0,0,0,.2);
+    position: relative;  
+    border-bottom: solid rgb(128, 128, 128, .1) 1px;
 }
 
 .top-nav #my-links {
     display: none;   
+    color: rgb(0,0,0,.2);
 }
 
-.top-nav a {
-    color: black;
-    padding: 14px 16px;
+.top-nav a {    
+    padding: 14px 16px;  
+    color: black;  
     text-decoration: none;
     font-size: 17px;
-    display: block;
-    
+    display: block;    
 }
+
+#my-links a:hover {
+    color: black;
+    border-top: solid rgb(128, 128, 128, .2) 1px; 
+    border-bottom: solid rgb(128, 128, 128, .2) 1px;    
+}
+
 
 .top-nav a.icon {
     background: white;
+    border-radius: 5px;
     display: block;
     position: absolute;
     right: 0;
@@ -40,21 +50,27 @@
 
 .active {
     background-color: white;
-    color: white;
+    color: white;    
 }
 
 body {
     background-color: white;
 }
 
+.logo {
+    display: none;                 
+}
+
 @media (min-width: 768px) {
 
     #my-links a:hover {
-        border-bottom: 2px solid rgb(12, 179, 12);    
+        border-top: none;
+        border-bottom: 2px solid rgb(12, 179, 12);                       
     }
 
     #my-links {
-        display: inline-block !important;
+        display: inline-block !important;  
+
     }
 
     .top-nav a {
@@ -71,7 +87,14 @@ body {
     }
 
     .top-nav {
-        text-align: center ;                  
+        text-align: center ;                    
+    }
+
+    .logo {
+        display: block;
+        text-align: center;   
+        position: relative;    
+                         
     }
 }
 
